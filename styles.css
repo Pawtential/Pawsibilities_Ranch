@@ -44,3 +44,38 @@ h1,h2,h3{color:#51315b}.topline{background:linear-gradient(90deg,#552c76,#9155a9
 
 @media(min-width:851px){.home-page .nav,.home-page .topline{display:none}}
 @media(max-width:850px){.home-page .topline{display:none}.home-page .nav{display:block}}
+
+/* Revision: full-width, uncropped illustrated homepage at every screen size */
+.hero-scene{min-height:0!important;overflow:visible}
+.hero-scene-img{display:block!important;width:100%!important;height:auto!important;min-height:0!important;object-fit:contain!important;object-position:center!important}
+.scene-link{display:block!important;position:absolute!important;top:1.5%;height:7.5%;min-height:0!important;z-index:4;touch-action:manipulation}
+.home-mobile-nav,.paw-trail,.trail-paw,.barn-shimmer,.scene-butterfly{display:none!important}
+.home-page .nav,.home-page .topline{display:none!important}
+@media(max-width:850px){
+  .hero-scene{min-height:0!important}
+  .hero-scene-img{height:auto!important;object-fit:contain!important}
+  .scene-link{display:block!important;top:1.5%;height:8%!important}
+}
+/* Enchanted interiors: warm dusk sky, wisteria, illustrated barn-country mood */
+body:not(.home-page){background:linear-gradient(165deg,#2e173f 0%,#6d3f87 26%,#e5a3b8 56%,#ffe6b2 78%,#fff0dc 100%) fixed;color:#402444}
+body:not(.home-page) .nav{background:linear-gradient(90deg,#422349f5,#6c3a6bf5,#49264ef5);border-bottom:3px solid #d3a86b;box-shadow:0 7px 30px #1e102c70}
+body:not(.home-page) .brand,body:not(.home-page) .links a:not(.button){color:#fff7e8}
+body:not(.home-page) .brand small{color:#eed2e6}
+body:not(.home-page) .links a:hover{color:#ffdc96}
+body:not(.home-page) .topline{background:#2c183b}
+body:not(.home-page) .page-hero{background:radial-gradient(ellipse at 10% 0%,#f1b8f37a,transparent 38%),radial-gradient(ellipse at 85% 100%,#f9ba8270,transparent 45%),linear-gradient(120deg,#4e2669,#88549b 45%,#d98ea3 80%,#f8bf94);color:#fff;min-height:290px;display:flex;align-items:center;border-bottom:5px solid #d9aa76;position:relative;isolation:isolate}
+body:not(.home-page) .page-hero:before{content:"✦     ❀        ✦      ❀       ✦";position:absolute;inset:auto 0 12px;text-align:center;font-size:24px;color:#ffe3ac99;letter-spacing:1.5vw;pointer-events:none}
+body:not(.home-page) .page-hero h1{color:#fff8f0;text-shadow:0 3px 18px #351744a8}
+body:not(.home-page) .page-hero p{color:#fff4ee;font-size:18px;text-shadow:0 2px 9px #31133d77}
+body:not(.home-page) .page-hero .eyebrow{color:#ffdc9b}
+body:not(.home-page) .section{background:linear-gradient(135deg,#fff0f4e8,#fff7e9f2,#f5e3f5e8);border-top:1px solid #fff9}
+body:not(.home-page) .section.tint{background:linear-gradient(135deg,#e7cce8f2,#f8e3d6f2,#f3d6e8f2)}
+body:not(.home-page) .section .container{position:relative}
+body:not(.home-page) .section h2{color:#6a3672}
+body:not(.home-page) .value-card,body:not(.home-page) .donate-card,body:not(.home-page) .contact-card{background:linear-gradient(150deg,#fffdf7,#f9edf6);border:2px solid #dcb9d9;box-shadow:0 10px 26px #713d7433}
+body:not(.home-page) .dog-card{background:linear-gradient(145deg,#fffefa,#fff1f6);border:2px solid #dba4d7;box-shadow:0 10px 25px #66347130}
+body:not(.home-page) .dog-photo{background:linear-gradient(135deg,#f5dce8,#f7e6d5)}
+body:not(.home-page) .footer{background:linear-gradient(120deg,#351b46,#5a2d5c);border-top:5px solid #d9a66b}
+body:not(.home-page) .info-box{background:#fff2f0;border-left:4px solid #c68dc6;box-shadow:0 7px 25px #8d538d29}
+body:not(.home-page) .filterbar select,body:not(.home-page) .filterbar input{background:#fff9f6;border:2px solid #d3a6cf}
+@media(max-width:850px){body:not(.home-page) .links{background:#4b2955}body:not(.home-page) .page-hero{min-height:230px}}
