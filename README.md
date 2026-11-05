@@ -1,25 +1,23 @@
-# Pawsibilities Ranch Dog Rescue — Enchanted Ranch Website
+# Pawsibilities Ranch — Full Enchanted Rescue Website (November update)
 
-Complete standalone rescue website for GitHub Pages, no subfolders.
+Standalone GitHub Pages website, flat files only. Upload the extracted files to the `Pawsibilities_Ranch` repository root.
 
-Includes the approved circular logo (`enchanted-ranch-logo.png`), illustrated ranch homepage (`enchanted-ranch-hero.webp`), animated sequential paw trail, 19 dog profiles/photos and approved stories, mission, contact and donations.
+## Approved new artwork
+- `enchanted-ranch-logo.png`: transparent circular logo
+- `enchanted-ranch-hero.webp`: new homepage art with five painted signs, no Events
+- `ranch-field-header.webp`: separate dogs-playing-in-field art for interior page headers
 
-## Publishing
-Create a SEPARATE repository (e.g. `pawsibilities-ranch`) to preserve Pawtential. Extract this ZIP, upload the files (not the ZIP) to the repository root, then Settings → Pages → Deploy from branch → main → /(root).
+## Responsive design
+- Mobile homepage has a short, compact header and displays the full hero art at its original aspect ratio. The real hamburger menu works, and painted sign links have transparent clickable hotspots.
+- Desktop homepage uses the same approved image with clickable sign hotspots.
+- Interior page headers use the field image and shorter mobile height so the next content appears sooner.
+- All Dogs lists adoptable dogs first; sanctuary profile CTAs support long-term care.
+- No paw-trail or butterfly animations.
 
 ## Editing
-`dogs.json` contains the 19 dog records. Replace individual .webp photos as needed. `styles.css` contains colors, animations, layout. `script.js` contains dog profile behavior.
+- `dogs.json`: 19 approved full dog stories, 14 adoptable and 5 sanctuary.
+- `styles.css`: responsive styles, art backgrounds, hotspots.
+- `script.js`: profile filters and modal.
 
-## Important
-The hero is a single illustrated composition with visual text/navigation baked into the artwork; invisible accessible clickable link areas overlay the desktop navigation. On mobile, separate real HTML navigation is shown. The animated paw trail is a CSS overlay and uses approximate placement over the painted path. The hero art's "Events" label routes to Contact because there is not yet an events page; update when you add one. Animations respect reduced-motion settings. Donations use third-party provider links; there is no onsite payment collection.
-
-
-## Latest design corrections
-- Removed animated paw overlays, butterflies, and barn shimmer.
-- The homepage illustration uses its original aspect ratio at all screen sizes, never cropped.
-- The wooden navigation text in the artwork is linked by transparent clickable areas on desktop and mobile; no duplicate buttons.
-- Interior pages use sunset/lavender gradients, ornate accents and warm decorative cards to match the enchanted homepage.
-- On narrow phones, the image and embedded navigation shrink together. Visitors may need to zoom for small menu text.
-
-## Mobile overhaul
-The mobile homepage uses `enchanted-ranch-mobile.webp`, a separately cropped image without the desktop navigation artwork. Its wooden-style buttons are actual HTML links. The full desktop artwork remains unchanged. Interior pages now use the enchanted ranch as a colorful banner background, with opaque text panels and no overlapping decorative symbols. All Dogs sorts adoptable first, sanctuary second; sanctuary story CTAs link to donation rather than adoption inquiry.
+## Note
+The text on the painted signs is part of the image. The transparent clickable areas match the signs and the separate hamburger menu provides an accessible fallback on small phones.
