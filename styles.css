@@ -145,3 +145,26 @@ body:not(.home-page) .page-hero p{font-size:clamp(14px,1.3vw,17px)!important;lin
  body:not(.home-page) .page-hero .eyebrow{font-size:10px!important}
 }
 @media(max-width:430px){.home-page .scene-link{height:18%!important}.home-page .nav-inner{min-height:50px!important}.home-page .brand img{height:34px!important;width:34px!important}}
+
+/* Desktop-only homepage: narrower illustrated ranch banner to reveal content below. */
+@media (min-width: 851px) {
+  .home-page .hero-scene {
+    width: min(100%, 1160px) !important;
+    max-width: 1160px !important;
+    margin-inline: auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    overflow: hidden !important;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 12px 35px rgba(51, 21, 62, .22);
+  }
+  .home-page .hero-scene-img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+  .home-page {
+    background: linear-gradient(120deg, #f8e9f7, #fff0e5, #f8e9f7);
+  }
+}
