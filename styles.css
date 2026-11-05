@@ -79,3 +79,28 @@ body:not(.home-page) .footer{background:linear-gradient(120deg,#351b46,#5a2d5c);
 body:not(.home-page) .info-box{background:#fff2f0;border-left:4px solid #c68dc6;box-shadow:0 7px 25px #8d538d29}
 body:not(.home-page) .filterbar select,body:not(.home-page) .filterbar input{background:#fff9f6;border:2px solid #d3a6cf}
 @media(max-width:850px){body:not(.home-page) .links{background:#4b2955}body:not(.home-page) .page-hero{min-height:230px}}
+
+/* Dedicated desktop and mobile compositions: real wood-style mobile links */
+.hero-picture{display:block;width:100%}.ranch-mobile-signs{display:none}
+@media(max-width:850px){
+ .home-page .nav,.home-page .topline{display:none!important}
+ .ranch-mobile-signs{display:flex!important;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;align-items:center;padding:12px 12px 14px;background:linear-gradient(#3c1e31,#74442e 45%,#3b221c);border-bottom:3px solid #e6b06b;scrollbar-width:thin}
+ .ranch-mobile-signs a{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:9px 15px;color:#fff1d9;text-decoration:none;font-size:14px;font-weight:800;text-shadow:0 2px 2px #251312;border:2px solid #bc8550;border-radius:8px;background:linear-gradient(#a66c3e,#794522 52%,#5d341e);box-shadow:inset 0 2px 2px #e6b58080,0 4px 7px #2d172d77;scroll-snap-align:start}
+ .ranch-mobile-signs a:focus-visible{outline:3px solid #f9d583;outline-offset:2px}
+ .hero-scene,.hero-picture{width:100%;min-height:0!important;overflow:hidden!important}
+ .hero-scene-img{display:block!important;width:100%!important;height:auto!important;min-height:0!important;max-width:100%!important;object-fit:contain!important;object-position:center!important}
+ .scene-link{display:none!important} /* desktop painted sign hotspots are replaced by real mobile buttons */
+ .welcome-under{padding:30px 0}
+}
+/* True illustrated, richly colored page headers. No symbols over heading text. */
+body:not(.home-page) .page-hero{background:linear-gradient(90deg,#30153b66,#5a286a40),url('enchanted-ranch-hero.webp') center 52%/cover no-repeat!important;min-height:340px!important;padding:65px 0!important;border-bottom:6px solid #d9a66b!important;isolation:isolate}
+body:not(.home-page) .page-hero:before,body:not(.home-page) .page-hero:after{content:none!important;display:none!important}
+body:not(.home-page) .page-hero .container{background:linear-gradient(100deg,#361a4bde,#4d2b64ba,#4b2a537a);padding:24px 28px;border-radius:18px;max-width:1120px;box-shadow:0 10px 30px #1b0a2a55}
+body:not(.home-page) .page-hero h1{color:#fff6e8!important;text-shadow:0 2px 12px #160b23!important;position:relative;z-index:1}
+body:not(.home-page) .page-hero p{color:#fff4e8!important;text-shadow:0 1px 8px #1c0c26!important}
+body:not(.home-page) .page-hero .eyebrow{color:#ffdda2!important}
+body:not(.home-page) .section{background:linear-gradient(120deg,#f8eaf8,#fff5e7,#f5e3f3)!important}
+body:not(.home-page) .section.tint{background:linear-gradient(120deg,#ebd2ed,#f9e3d4,#f1d8ec)!important}
+body:not(.home-page) .dog-card{animation:none!important;box-shadow:0 8px 25px #733e7936!important}
+body:not(.home-page) .dog-card:hover{box-shadow:0 12px 30px #733e7966!important}
+@media(max-width:850px){body:not(.home-page) .page-hero{min-height:310px!important;padding:48px 0!important;background-position:56% 45%!important}body:not(.home-page) .page-hero .container{width:calc(100% - 28px);padding:25px 20px!important}body:not(.home-page) .page-hero h1{font-size:clamp(35px,8vw,54px)!important}body:not(.home-page) .page-hero p{font-size:16px!important}}

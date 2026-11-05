@@ -20,3 +20,6 @@ The hero is a single illustrated composition with visual text/navigation baked i
 - The wooden navigation text in the artwork is linked by transparent clickable areas on desktop and mobile; no duplicate buttons.
 - Interior pages use sunset/lavender gradients, ornate accents and warm decorative cards to match the enchanted homepage.
 - On narrow phones, the image and embedded navigation shrink together. Visitors may need to zoom for small menu text.
+
+## Mobile overhaul
+The mobile homepage uses `enchanted-ranch-mobile.webp`, a separately cropped image without the desktop navigation artwork. Its wooden-style buttons are actual HTML links. The full desktop artwork remains unchanged. Interior pages now use the enchanted ranch as a colorful banner background, with opaque text panels and no overlapping decorative symbols. All Dogs sorts adoptable first, sanctuary second; sanctuary story CTAs link to donation rather than adoption inquiry.
